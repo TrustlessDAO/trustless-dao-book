@@ -1,0 +1,14 @@
+[book]
+authors = ["The TrustlessDAO contributors"]
+language = "en"
+multilingual = false
+src = "src"
+title = "TrustlessDAO"
+
+[output.html]
+git-repository-url = "https://github.com/TrustlessDAO"
+no-section-label = true
+
+[output.html.fold]
+enable = true
+level = 1
