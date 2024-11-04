@@ -1,5 +1,7 @@
 # Intentions and Actions
 
+ To understand how such a decentralized platform can be created, we must first consider the concepts of intention and action
+
 ## Scenario: A Random Person Asks You for Money on the Street
 
 While most people have encountered this scenario themselves, most likely haven’t considered it in terms of intentions and actions.

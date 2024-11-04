@@ -9,4 +9,4 @@ The majority of researchers currently limit their auditing to projects listed on
 
 Disclosures of bugs found outside of the official scopes do currently occur but leave the discloser vulnerable to [non-ideal outcomes](https://x.com/WhiteHatMage/status/1850899212902310004). This happens because the discloser loses nearly all leverage once the information is shared.
 
-We believe this can be improved through the creation of a dynamic and verifiable on-chain reputation. To understand how such a reputation can be created, we must first consider the concepts of intention and action.
+We believe this can be improved through the creation of a decentralized system of smart contracts that enables security researchers to safely disclose vulnerabilities for any deployed asset, regardless of whether it is part of an official bug bounty program. Before diving into the specific mechanisms that make this possible, let's examine where TrustlessDAO fits in the existing ecosystem and how it naturally builds on the work done thus far by existing platforms.
