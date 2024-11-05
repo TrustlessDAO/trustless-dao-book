@@ -11,9 +11,11 @@
     - [Minimizing Deception](./intentions-and-actions/deception.md)
 
 - [The Mechanism](./mechanism.md)
-    - [Intentions Broadcast](./mechanism/intentions.md)
-    - [Concensus Through Contracts](./mechanism/concensus.md)
-    - [Action Based Reputation](./mechanism/reputation.md)
+    - [Intentions Broadcast]()
+    - [The Free-First Model](./mechanism/free-first.md)   
+    - [Managing Payment Risk](./mechanism/payment-risk.md)
+    - [Concensus Through Contracts]()
+    - [Action Based Reputation]()
 
 ---
 
