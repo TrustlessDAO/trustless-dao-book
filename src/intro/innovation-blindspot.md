@@ -14,7 +14,7 @@ Yet none of these was the solution that ultimately transformed the landscape. In
 
 This pattern mirrors Henry Ford's famous quote: "If I had asked people what they wanted, they would have said faster horses." In security:
 - Pre-2020: Focus on making developers better at security
-- Post-2020: Create specialized roles and incentives for security professionals
+- Post-2020: Create specialized roles and incentives for Web3 security professionals
 
 The lesson? Innovation often requires imagining systems that don't yet exist, rather than optimizing current ones.
 

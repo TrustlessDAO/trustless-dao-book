@@ -22,4 +22,4 @@ The evolution from centralized to decentralized solutions tends to follow a patt
 - TrustlessDAO aims to decentralize the model entirely
 - Result: Each evolution expanded the scope of what's possible in security
 
-> The question isn't whether decentralized bug bounty platforms will emerge, but why they haven't already. The answer lies in the complexity of designing new mechanisms that can truly improve upon existing solutions.
+> The question isn't whether decentralized bug bounty platforms will emerge, but rather why they haven't already. The answer lies in the complexity of designing new mechanisms that can truly improve upon existing solutions.
