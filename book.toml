@@ -7,7 +7,7 @@ title = "TrustlessDAO"
 
 [output.html]
 git-repository-url = "https://github.com/TrustlessDAO"
-# no-section-label = true
+no-section-label = true
 
 [output.html.fold]
 enable = true
