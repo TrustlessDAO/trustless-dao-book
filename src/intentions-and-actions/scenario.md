@@ -16,4 +16,4 @@ The chart below can be most easily understood by selecting an intention from the
 | 😈 | You might be a bad person |
 | 🤔 | Seek God |
 
-As the chart demonstrates, the honest actions are those in which stated intentions and actions are aligned. The opposite, where a mismatch is present, should be considered deceptive actions. The ideal would be to reward honesty and penalize deception. Next, we'll discuss how deception can be minimized, even when not all participants are honest.
+As the chart demonstrates, the honest actions are those in which stated intentions and actions are aligned. The opposite, where a mismatch is present, should be considered dishonest actions. The ideal would be to reward honesty and penalize dishonesty. Next, we'll discuss how dishonesty can be minimized, even when not all participants are honest.

@@ -10,11 +10,10 @@
 - [Intentions and Actions](./intentions-and-actions.md)
     - [When Actions Match Stated Intentions](./intentions-and-actions/scenario.md)
     - [Minimizing Dishonesty](./intentions-and-actions/dishonesty.md)
-    - [Managing Payment Risk](./intentions-and-actions/payment-risk.md)
 
 - [The Contract Phase](./contract-phase.md)
     - [Contract Mechanism]()
-    - [Deployment & Registry]()
+    - [Deployment]()
     - [Negotiation Process]()
     <!-- - [Contract Mechanism](./contract-phase/mechanism.md)
     - [Deployment & Registry](./contract-phase/deployment.md)
