@@ -11,7 +11,7 @@ Consider how this manifests in everyday life:
 - Students miss fewer days when attendance is tracked
 - Employees arrive on time when check-in systems are implemented
 
-The key insight isn't that observation forces compliance—it's that making actions visible encourages voluntary alignment with expected behavior.
+The key insight isn't that observation forces compliance—it's that making actions visible to others encourages voluntary alignment with expected behavior.
 
 ## From Observation to Verification
 
