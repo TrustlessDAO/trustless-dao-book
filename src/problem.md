@@ -1,27 +1,27 @@
 # The Problem
 
-## Current Limitations
-
 Most Web3 security researchers limit their work to projects with official bug bounty programs. This creates a dangerous imbalance:
-- White-hat researchers only look at bounty-covered code
-- Black-hat attackers look everywhere
-- Many protocols remain under-examined by friendly researchers
+
+- White-hat researchers focus only on bounty-covered code.
+- Black-hat hackers target everything.
+- Many protocols remain under-examined by friendly researchers.
 
 ## The Disclosure Challenge
 
-When researchers find vulnerabilities in protocols without bounty programs, they face a difficult choice:
+When researchers find vulnerabilities in protocols without bounty programs, they face a difficult decision:
 
-1. Share the vulnerability details upfront and hope for fair compensation
-2. Keep the information private, leaving protocols vulnerable
+1. Share the vulnerability details upfront and hope for fair compensation.
+2. Keep the information private, leaving protocols vulnerable.
 
-Neither option is good for the ecosystem. Researchers who choose to disclose often end up providing valuable information without compensation, while protocols miss opportunities to fix vulnerabilities before they're exploited.
+Neither option benefits the ecosystem. Researchers who disclose often provide valuable insights without receiving fair compensation, while protocols miss critical opportunities to address vulnerabilities due to withheld reports.
 
 ## What's Needed
 
-A simple system that:
-- Protects researchers when sharing valuable information
-- Gives protocols confidence in the disclosure process
-- Creates clear evidence of all commitments
-- Enables fair compensation for valuable discoveries
+A straightforward system that:
 
-The next chapter explains how IndependentDisclosure provides these protections through minimal but effective mechanisms.
+- Allows researchers to protect themselves when they share valuable information.
+- Gives protocols confidence in the disclosure process.
+- Creates clear evidence of all commitments.
+- Enables fair compensation for meaningful discoveries.
+
+The next chapter explains how IndependentDisclosure delivers these protections through minimal yet effective mechanisms.
