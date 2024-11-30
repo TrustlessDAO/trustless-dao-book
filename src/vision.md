@@ -40,4 +40,4 @@ Our ultimate aim is to make peer-to-peer vulnerability disclosure the norm. Indi
 - **Standards of Good Faith**: Clearly defined and widely accepted expectations.  
 - **Improved Security**: Tangible benefits for the entire Web3 ecosystem.
 
-**IndependentDisclosure** is just the foundation. We are committed to evolving and expanding this system until direct, peer-to-peer vulnerability disclosure is the default choice for researchers and protocols alike. We hope you will join us on this journey.
+IndependentDisclosure is just the foundation. We are committed to evolving and expanding this system until direct disclosure is the default choice for researchers and protocols alike. We hope you will join us on this journey.

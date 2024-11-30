@@ -22,7 +22,7 @@ IndependentDisclosure is a simple smart contract designed to be combined with ca
 4. Edit your repository's [initial-terms.md](https://github.com/TrustlessDAO/independent-disclosure/blob/main/initial-terms.md) file to add your terms. Initial terms are suggestions for the protocol; only final terms are binding.  
 
 5. Update your repository's [report.md](https://github.com/TrustlessDAO/independent-disclosure/blob/main/report.md) file to include the full vulnerability report.  
-   * These steps ensure that no one else can prove prior knowledge of the vulnerability.  
+   * These steps establish a provable timestamp of your discovery, ensuring that anyone intercepting or receiving the disclosure details from you cannot falsely claim they found it first.
 
 6. Invite protocol representatives to the repository and direct them to the ["Protocol Action Items"](https://github.com/TrustlessDAO/independent-disclosure/blob/main/README.md#protocol-action-items) section of the README, which summarizes their required actions.  
 
