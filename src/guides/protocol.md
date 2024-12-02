@@ -4,6 +4,14 @@ IndependentDisclosure is a peer-to-peer vulnerability disclosure framework that 
 
 ---
 
+## Git Safety Tips
+
+**Important Warning**: If you ever receive errors or warnings when trying to push or pull changes during the disclosure process, STOP and examine the repository on GitHub before proceeding. Messages about "non-fast-forward" updates or divergent histories could indicate that someone has rewritten the repository history, potentially modifying terms or commitments maliciously. Never use `--force` with git commands unless you fully understand the implications. Your local copy serves as proof of the original history.
+
+While history modification is considered a very unlikely event (as it's easily detectable bad faith that immediately kills the deal), maintaining a local copy provides simple but robust protection against such attempts. We describe how to do so below.
+
+---
+
 ## Phase 1: Initial Contact  
 
 A security researcher has identified a potential vulnerability in your protocol and intends to disclose it responsibly. Here's what to expect:
@@ -19,17 +27,31 @@ A security researcher has identified a potential vulnerability in your protocol 
 When you're ready to proceed:  
 
 1. The researcher will invite you to their private GitHub repository.  
+
 2. Inside the repository, you'll find the following key files:  
    * [report.md](https://github.com/TrustlessDAO/independent-disclosure/blob/main/report.md): Contains the full vulnerability details.  
    * [initial-terms.md](https://github.com/TrustlessDAO/independent-disclosure/blob/main/initial-terms.md): Contains the researcher's suggested terms.  
    * [protocol-assessment.md](https://github.com/TrustlessDAO/independent-disclosure/blob/main/protocol-assessment.md): Where you will provide your assessment.  
    * [README.md](https://github.com/TrustlessDAO/independent-disclosure/blob/main/README.md): Contains complete process documentation.  
 
-3. Review the report and initial terms carefully. The initial terms are non-binding suggestions and can be negotiated.  
+3. Create a local copy of the repository:
+   ```bash
+   git clone <private-repo-url> local-backup
+   ```
+   This backup protects you against potential history modifications.
+
+4. Review the report and initial terms carefully. The initial terms are non-binding suggestions and can be negotiated.  
 
 ---
 
 ## Phase 3: Assessment  
+
+Before submitting your assessment:
+1. Sync your local copy to ensure you have the latest version:
+   ```bash
+   git pull origin main
+   ```
+2. This pull ensures you have evidence of the original disclosure and terms.
 
 You have full control over assessing the validity of the disclosure. Your assessment options are:  
 
@@ -58,6 +80,11 @@ If you confirm the vulnerability:
    * This ensures the authenticity of your commitment.  
 3. The researcher will add your specified wallet address to the smart contract.  
 4. Collaborate with the researcher to agree on settlement terms in `final-terms.md`.  
+5. After final terms are agreed, sync your local copy one last time:
+   ```bash
+   git pull origin main
+   ```
+   This ensures you have proof of the final agreed terms.
 
 ---
 
@@ -67,6 +94,7 @@ The IndependentDisclosure process creates an evidence trail that protects both p
 
 * The smart contract records key events and commitments on-chain.  
 * The GitHub repository preserves all communication and agreements.  
+* Your local copy of the repository is crucial evidence. Git will warn you if the other party attempts to modify history, requiring a force-pull to accept their changes. These warnings are your signal that bad faith actions may be occurring. You can prove this by sharing your local copy, which contains the original unmodified history.
 * Commit hashes serve as timestamps without exposing sensitive vulnerability details.  
 * Either party can prove bad faith using the evidence trail.  
 
@@ -92,4 +120,4 @@ For questions or concerns about the IndependentDisclosure process:
 
 ---
 
-Thank you for participating in responsible security disclosure. Your cooperation helps make the ecosystem safer for everyone.  
+Thank you for participating in responsible security disclosure. Your cooperation helps make the ecosystem safer for everyone.

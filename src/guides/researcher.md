@@ -4,6 +4,14 @@ IndependentDisclosure is a simple smart contract designed to be combined with ca
 
 ---
 
+## Git Safety Tips
+
+**Important Warning**: If you ever receive errors or warnings when trying to push or pull changes during the disclosure process, STOP and examine the repository on GitHub before proceeding. Messages about "non-fast-forward" updates or divergent histories could indicate that someone has rewritten the repository history, potentially modifying terms or commitments maliciously. Never use `--force` with git commands unless you fully understand the implications. Your local copy serves as proof of the original history.
+
+While history modification is considered a very unlikely event (as it's easily detectable bad faith that immediately kills the deal), maintaining a local copy provides simple but robust protection against such attempts. We describe how to do so below.
+
+---
+
 ## Phase 1: Create Report and Begin Contact Attempts  
 
 1. Finalize the vulnerability report locally, then begin reaching out to the affected protocol through all available private channels (Discord, email, Telegram, etc.). Document these attempts thoroughly.
@@ -24,12 +32,24 @@ IndependentDisclosure is a simple smart contract designed to be combined with ca
 5. Update your repository's [report.md](https://github.com/TrustlessDAO/independent-disclosure/blob/main/report.md) file to include the full vulnerability report.  
    * These steps establish a provable timestamp of your discovery, ensuring that anyone intercepting or receiving the disclosure details from you cannot falsely claim they found it first.
 
-6. Invite protocol representatives to the repository and direct them to the ["Protocol Action Items"](https://github.com/TrustlessDAO/independent-disclosure/blob/main/README.md#protocol-action-items) section of the README, which summarizes their required actions.  
+6. If you haven't already created a local backup of your repository:
+   ```bash
+   git clone <your-private-repo-url> local-backup
+   ```
+   This local copy provides evidence if the protocol attempts to modify history later.
 
-7. Wait for the protocol to update the [protocol-assessment.md](https://github.com/TrustlessDAO/independent-disclosure/blob/main/protocol-assessment.md) file with their response.  
-   * Bad-faith negotiation tactics, such as disregarding an agreed-upon waiting period, can be exposed at any time by either party. This can be done without revealing disclosure details and will be judged by the court of public opinion.  
+7. Invite protocol representatives to the repository and direct them to the ["Protocol Action Items"](https://github.com/TrustlessDAO/independent-disclosure/blob/main/README.md#protocol-action-items) section of the README, which summarizes their required actions.  
 
-8. The protocol’s assessment should be considered binding. Each response dictates a distinct path:  
+8. Wait for the protocol to update the [protocol-assessment.md](https://github.com/TrustlessDAO/independent-disclosure/blob/main/protocol-assessment.md) file with their response.  
+   * Bad-faith negotiation tactics, such as disregarding an agreed-upon waiting period, can be exposed at any time by either party. This can be done without revealing disclosure details and will be judged by the court of public opinion.
+
+9. Once the protocol updates protocol-assessment.md, sync your local copy:
+   ```bash
+   git pull origin main
+   ```
+   This ensures you have proof of their original assessment.
+
+10. The protocol's assessment should be considered binding. Each response dictates a distinct path:  
 
 |  Status  | Implications |
 |----|---------|
@@ -37,10 +57,16 @@ IndependentDisclosure is a simple smart contract designed to be combined with ca
 | **`Non-Issue`** | Grants immediate permission to go public with the full report.  |
 | **`Won't-Fix`** | Indicates acknowledgment. If the protocol prefers the issue remain private, negotiate a fair confidentiality price. If no timely settlement is reached, permission is granted to make the report public.   | 
 
-9. Once authorization is complete, call the `setParticipant` function on the IndependentDisclosure contract with the specified wallet address. Proceed to collaborate with the protocol to agree on final terms.  
+11. Once authorization is complete, call the `setParticipant` function on the IndependentDisclosure contract with the specified wallet address. Proceed to collaborate with the protocol to agree on final terms.  
    * If needed, remind the protocol to DM the commit hash for the authorization from their official Telegram or Twitter. This ensures commitment authenticity.  
 
-10. The disclosure process is now complete. If the report was not confirmed, periodically check the protocol’s deployed contract for fixes.
+12. After final terms are agreed, sync your local copy one last time:
+    ```bash
+    git pull origin main
+    ```
+    This ensures you have proof of the final agreed terms.
+
+13. The disclosure process is now complete. If the report was not confirmed, periodically check the protocol's deployed contract for fixes.
     * If a fix is implemented without prior agreement, present the case for payment to the court of public opinion, citing verifiable on-chain evidence from the disclosure process.  
 
 > **Note**: TrustlessDAO's Arbiter system will streamline the process of resolving disputes in cases of on-chain dishonesty or bad faith.
